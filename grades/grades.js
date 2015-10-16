@@ -51,7 +51,10 @@ console.log("countC", countC);
 console.log("countD", countD);
 console.log("countF", countF);
 
-for (var j =0; j < scores.length; j++) {
+
+// var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
+
+for (var j = 0; j < scores.length; j++) {
 	if (scores[j] < lowestScore) {
 		lowestScore = scores[j];
 	} else {
@@ -73,7 +76,7 @@ console.log("highestScore", highestScore);
 
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
 var currentScore,
-    highestSCore = 0,
+    highestScore = 0,
     lowestScore = 101,
     gradeA=[],
     gradeB=[],

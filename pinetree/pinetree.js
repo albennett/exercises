@@ -45,6 +45,7 @@ var spaceCount = ((number + (number - 1))-1)/2;
 
 tree(7); 
 
+document.getElementById("df") = height
 
 //// another way
 
@@ -61,5 +62,5 @@ var tree = function(height) {
 
     var pineOutput = pinetree.join("");
     console.log(pineOutput);
-  }
+  };
 }; tree(10);

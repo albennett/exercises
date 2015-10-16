@@ -21,6 +21,11 @@ var output = "";
 */
 
 
+/*<h1 style = "color: blue "> <div> blue reindeer </div>*/
+
+
+
+
 for (var i = 0; i < reindeer.length; i++) {
   var currentReindeer = reindeer[i];
   var currentColor = colors[i];
