@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SANDWICH 2000</title>
+    <link rel="stylesheet" type="text/css" href="sandwich.css">
+  </head>
+  <body>
+  <!-- My ingredients  -->
+  <div id="title"><h1>SANDWICH 2000</h1></div>
+    <div id="sandwich_builder">
+    <p>----------Bread --------------- Meat ---------------Cheese ---------------Veggies --------------Condiments</p>
+        <select multiple id="bread">
+            <option id="wheat" value="wheat">Wheat</option>
+             <option id= "italian" value="italian">Italian</option>
+            <option id = "rosemary" value="rosemary">Rosemary</option>
+        </select>
+        <select multiple id="meat">
+            <option id="no_meat" value="no meat">No thanks</option>
+            <option id="turkey" value="turkey">Turkey</option>
+            <option id="chicken" value="chicken">Chicken</option>
+            <option id="bacon" value="bacon">Bacon</option>
+        </select>
+        <select multiple id="cheese">
+            <option id="no_cheese" value="no cheese">No thanks</option>
+            <option id="american" value="american">American</option>
+            <option id="cheddar" value="cheddar">Cheddar</option>
+            <option id="swiss" value="swiss">Swiss</option>
+        </select>
+        <select multiple id="veggie">
+            <option id="no_veggie" value="no veggie">No thanks</option>
+            <option id="spinach" value="spinach">Spinach</option>
+            <option id="pickles" value="pickles">Pickles</option>
+            <option id="olives" value="olives">Olives</option>
+        </select>
+        <select multiple id="condiments">
+            <option id="no_condiments" value="no condiments">No thanks</option>
+            <option id="ketchup" value="ketchup">Ketchup</option>
+            <option id="mustard" value="mustard">Mustard</option>
+            <option id="guacamole" value="guacamole">Guacamole</option>
+        </select> 
+        <!-- the button to perform all the functions in functionality.js -->
+      <div id="button">  <button id="make-button">Make me a sandwich</button></div>
+    </div>
+    <!-- where the cost goes -->
+    <div id="output"></div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="bread.js"></script>
+    <script src="cheese.js"></script>
+    <script src="meat.js"></script>
+    <script src="condiments.js"></script>
+    <script src="veggie.js"></script>
+    <script src="functionality.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+#sandwich-builder {
+ 
+}
+#head {
+	height: 100px;
+}
+
+
+body {
+	background-color: CadetBlue;
+	color: white;
+}
+
+#bread {
+	color: dimGray;
+	width: 130px;
+	font-size: 15px;
+	padding: 7px;
+}
+#meat {
+	color: dimGray;
+	width: 130px;
+	font-size: 15px;
+	padding: 7px;
+}
+#veggie {
+	color: dimGray;
+	width: 130px;
+	font-size: 15px;
+	padding: 7px;
+}
+#condiments {
+	color: dimGray;
+	width: 130px;
+	font-size: 15px;
+	padding: 7px;
+}
+#cheese {
+	color: dimGray;
+	width: 130px;
+	font-size: 15px;
+	padding: 7px;
+}
+
+#make-button {
+	font-size: 25px
+
+	
+}
+
+#button {
+	margin: 10px;
+}
