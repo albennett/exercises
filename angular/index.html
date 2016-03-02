@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+ 
+<body ng-app="TodoApp">
+	<div ng-view></div>
+	
+
+	<section ng-controller="TodoCtrl">
+		<h1>{{ title }}</h1>
+		<h2>{{ hello }}</h2>
+	
+		<!-- <div>
+	  		<input type="text" ng-model="macaroni" />
+	  		<div> {{ macaroni }}</div>
+		</div> -->
+
+		<input type="text" ng-model="searchText" />
+
+		<div>
+		  <ul ng-repeat="todo in todos | filter: searchText">
+		    <li>{{ todo.name }}<button ng-click="killTodo(todo)">Finish</button></li>
+		  </ul>
+		</div>
+
+		<div>
+		  Grouped tasks:
+		  <select
+		      ng-model="theTodo"
+		      ng-options="value.name group by value.complete for value in todos">
+		  </select>
+		</div>
+	
+	</section>
+
+
+
+	<script src="lib/bower_components/angular/angular.min.js"></script>
+	<script src="app/Todo.js"></script>
+
+</body>
+
+</html>
